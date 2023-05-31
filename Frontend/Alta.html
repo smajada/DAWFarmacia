@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="JS/Alta.js" defer></script>
+  <title>Alta</title>
+</head>
+<body>
+<label for="xipId">Id del xip: </label>
+<input type="text" name="xipId" id="xipId">
+<div class="lists">
+
+<select name="patients" id="patient-list">
+  
+  </select>
+  <select name="medicines" id="medicine-list">
+  
+  </select>
+</div>
+
+
+<label for="date">Data de caducitat: </label>
+<input type="date" name="expiry-date" id="expiry-date">
+
+<div class="buttons">
+  <button onclick="enviar()">Enviar</button>
+  <button onclick="goGestion()">Volver a gestión</button>
+</div>
+
+<div id="estat">
+
+</div>
+</body>
+</html>
