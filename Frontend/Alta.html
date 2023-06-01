@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
   <script src="JS/Alta.js" defer></script>
   <title>Alta</title>
 </head>
+
 <body>
-<label for="xipId">Id del xip: </label>
-<input type="text" name="xipId" id="xipId">
-<div class="lists">
+  <div class="container">
+    <header>Formulari d'alta</heade>
+      <div class="form">
+        <div class="field">
+          <div class="input-field">
+            <input type="text" name="xipId" id="xipId" placeholder="Inserta l'ID del xip" class="input-field" required>
+          </div>
+        </div>
+        <div class="input-field field">
 
-<select name="patients" id="patient-list">
-  
-  </select>
-  <select name="medicines" id="medicine-list">
-  
-  </select>
-</div>
+          <select name="patients" id="patient-list">
+            <option value="" disabled selected hidden>Choose a patient</option>
+
+          </select>
+        </div>
+
+        <div class="input-field field">
+          <select name="medicines" id="medicine-list">
+            <option value="" disabled selected hidden>Choose a medicine</option>
+          </select>
+        </div>
+        <div class="input-field field">
+
+          <label for="date">Data de caducitat: </label>
+          <input type="date" name="expiry-date" id="expiry-date">
+        </div>
+
+        <div class="input-field button">
+          <input type="submit" value="Send" id="submit" onclick="enviar()">
+        </div>
+        <div class="input-field button">
+          <input type="submit" value="Volver a gestión" onclick="goGestion()">
+        </div>
 
 
-<label for="date">Data de caducitat: </label>
-<input type="date" name="expiry-date" id="expiry-date">
+        <div id="estat">
 
-<div class="buttons">
-  <button onclick="enviar()">Enviar</button>
-  <button onclick="goGestion()">Volver a gestión</button>
-</div>
+        </div>
 
-<div id="estat">
-
-</div>
+      </div>
+  </div>
 </body>
+
 </html>

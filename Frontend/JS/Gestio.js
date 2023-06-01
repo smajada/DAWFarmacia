@@ -32,3 +32,9 @@ function getTable() {
 function goAlta(){
   window.location.href = "Alta.html";
 }
+
+function showName() {
+  var nameField = document.getElementById("name");
+  var mail = sessionStorage.getItem("mail");
+  nameField.innerHTML = `<h1>${mail}</h1>`;
+}
