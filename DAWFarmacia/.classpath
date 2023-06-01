@@ -18,6 +18,5 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/sergi/OneDrive/Escritorio/FP/Entornos de Desarrollo/DAWFarmaciaDavid/src/main/webapp/WEB-INF/lib/json-20230227.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

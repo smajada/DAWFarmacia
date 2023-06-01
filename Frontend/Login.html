@@ -5,15 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/Login.js" defer></script>
 </head>
 <body>
-    <label for="mail">Email: </label>
-    <input type="text" name="mail" id="mail">
-    <label for="pass">Contrasenya: </label>
-    <input type="password" name="pass" id="pass">
-    <button onclick="enviar()">Enviar</button>
+    <div class="container">
+        <header>Login</header>
 
-    <div id="resultat"></div>
+        <div class="form">
+            <div class="field" id="email-field">
+                <div class="input-field">
+                    <input class="email" type="email" name="mail" id="mail" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div class="field" id="pass-field">
+                <div class="input-field">
+                    <input class="password" type="password" name="pass" id="pass" placeholder="Enter your password" required>
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+            </div>
+            <div class="input-field button">
+                <input type="submit" value="Send" id="submit" onclick="enviar()">
+            </div>
+            <div id="resultat"></div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,21 +1,4 @@
-// function enviarPOST() {
-// 	var http = new XMLHttpRequest();
 
-// 	let email = document.getElementById('mail').value;
-// 	let pass = document.getElementById('pass').value;
-
-// 	http.open("POST", "http://localhost:3000/Tomcat/Login", true);
-// 	http.setRequestHeader("Content-type", "application-x-www-form-urlencoded");
-// 	http.send("mail="+email+"&pass="+pass);
-
-// 	http.onreadystatechange = function () {
-// 		if (this.readyState == 4 && this.status == 200) {
-// 			if (http.responseText == "ok") {
-// 				document.getElementById("resultat").innerHTML = "Estás logeado."
-// 			}
-// 		}
-// 	}
-// }
 
 function enviar() {
 	var http = new XMLHttpRequest();
@@ -40,3 +23,21 @@ function enviar() {
 		}
 	}
 }
+
+const eyeIcons = document.querySelectorAll(".show-hide");
+
+eyeIcons.forEach((eyeIcon) => {
+	eyeIcon.addEventListener("click", () => {
+		const pInput = eyeIcon.parentElement.querySelector("input");
+
+		if (pInput.type === "password") {
+			eyeIcon.classList.replace("bx-hide", "bx-show");
+			pInput.type = "text";
+		} else {
+			eyeIcon.classList.replace("bx-show", "bx-hide");
+			pInput.type = "password";
+		}
+	});
+});
+
+

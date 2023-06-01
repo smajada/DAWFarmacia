@@ -1,0 +1,185 @@
+/* Importar fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+:root {
+  --main-grad-color:linear-gradient(201deg, #F4D03F 0%, #16A085 100%);
+  
+  --bg-color: #F4D03F;
+  --placeholder-color: #333;
+  --white: #ffff;
+  --main-btn-color: #F4D03F ;
+  --hover-btn-color: #16A085;
+  --border-color: #919191;
+  --error-color: #d93025;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  background-image: var(--main-grad-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: var(--white);
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.container {
+  position: relative;
+  max-width: 370px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.container header {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--placeholder-color);
+}
+
+.container .form {
+  margin-top: 30px;
+}
+
+.form .field {
+  margin-bottom: 20px;
+}
+
+.form .input-field {
+  position: relative;
+  height: 55px;
+  width: 100%;
+}
+
+.input-field input,
+select,
+option {
+  appearance: none;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  padding: 0 15px;
+}
+
+.invalid input {
+  border-color: var(--error-color);
+}
+
+.input-field .show-hide {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: var(--border-color);
+  cursor: pointer;
+  padding: 3px;
+
+}
+
+select {
+  padding-right: 15px;
+  background-image: url('../img/down-arrow.png');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+  background-size: 15px;
+  cursor: pointer;
+}
+
+.button {
+  margin: 25px 0 6px;
+
+}
+
+.button input {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--main-btn-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px 15px 5px 15px;
+  
+}
+
+.button input:hover {
+  background-color: var(--hover-btn-color);
+}
+
+.name{
+  display: flex;
+  gap: 5px;
+}
+
+#logOut{
+  margin-top: 10px;
+  margin-right: 10px;
+  position:absolute;
+  top:0;
+  right:0;
+  border-radius: 5px;
+  padding: 5px;
+  border: white 1px solid;
+}
+
+#table{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+
+table{
+  background-color: rgba(255, 255, 255, 0.2);
+  width:80%;
+  table-layout: fixed;
+}
+
+th{
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: black;
+  text-transform: uppercase;
+}
+
+td{
+  padding: 15px;
+  text-align: center;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.2);
+}
+
+tr:not(:first-child):hover {
+  background-color: var(--hover-btn-color);
+}
