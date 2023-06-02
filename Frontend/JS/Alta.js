@@ -80,7 +80,6 @@ function enviar() {
 
   http.open("POST", "http://localhost:3000/DAWFarmacia/Release", true);
   http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  console.log("conexión bien");
 
   http.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {

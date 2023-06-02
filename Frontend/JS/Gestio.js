@@ -24,7 +24,7 @@ function getTable() {
 
 		} else {
 
-			document.getElementById("table").innerHTML = "<p>Error al carregar.</p>";
+			document.getElementById("table").innerHTML = "<p>Error while loading.</p>";
 		}
 	};
 }
